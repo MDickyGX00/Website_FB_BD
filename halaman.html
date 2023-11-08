@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #myCarousel {
+        width: 100%;
+    }
+
+    .carousel-inner {
+        text-align: center;
+    }
+    .carousel-item img {
+        margin: 0 auto;
+        max-height: 750px;
+        display: block;
+    }
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+    body{
+        background-color: crimson;
+        color: white;
+    }
+    .card{
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+    .navbar {
+      background-color: crimson; /* Warna baru untuk latar belakang navigasi bar */
+      border: 2px solid white;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: bold; /* Menjadikan teks navigasi menjadi tebal */
+      color: white;
+      font-size: 20px;
+    }
+    .navbar-brand{
+      color: white;
+      font-weight: bold;
+    }
+    .search{
+      border: 3px solid white;
+    }
+    .carousel{
+        margin-top: 5em;
+    }
+    #testimoni{
+        margin-top: 10em;
+        text-align: center;
+        margin-bottom: 5em;
+    }
+    input[type="submit"] {
+        background-color: #E90064;
+        color: #efe1d1;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #B3005E;
+        transition: 1s;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Food</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produk">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimoni">Testimoni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hubungi">Kontak</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section id="carousel">
+        <div class="card" style="background-color: rgba(255, 255, 255, 0.101);">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="burgir.jpg" class="d-block w-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>RED HEALTHY BURGER</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="strwbry.jpg" class="d-block w-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>JUICY STRAWBERRY</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="cherry.jpg" class="d-block w-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SWEATY CHERRY</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>RED HEALTHY BURGER</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cum dolorum delectus, numquam earum porro saepe minus sint alias quidem!</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="burgir.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>JUICY STRAWBERRY</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cum dolorum delectus, numquam earum porro saepe minus sint alias quidem!</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="strwbry.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>SWEATY CHERRY</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cum dolorum delectus, numquam earum porro saepe minus sint alias quidem!</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="cherry.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!--Produk-->
+    <section id="produk" class="container py-6">
+        <div class="row">
+            <h2>Produk Kami</h2>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="strwbry.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Strawberry</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://wa.me/+6281275847175?text=Kak%20saya%20mau%20order%20" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="cherry.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cherry</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://wa.me/+6281275847175?text=Kak%20saya%20mau%20order%20" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="burgir.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Red Burger</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://wa.me/+6281275847175?text=Kak%20saya%20mau%20order%20" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimoni" class="container py-6">
+        <div class="row">
+            <h2 style="margin-bottom: 2em;">Testimoni Pelanggan</h2>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="tes1.jpeg" class="card-img-top" alt="...">
+                    <h5 class="card-title">Fuji</h5>
+                    <div class="card-body">
+                      <p class="card-text">Maknyus Pol!</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="tes2.jpeg" class="card-img-top" alt="...">
+                    <h5 class="card-title">Fathur</h5>
+                    <div class="card-body">
+                      <p class="card-text">Enak Lo Rek !</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="tes3.jpeg" class="card-img-top" alt="...">
+                    <h5 class="card-title">Gato</h5>
+                    <div class="card-body">
+                      <p class="card-text">Miaw</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section id="hubungi" class="container py-6">
+        <form>
+            <div class="row">
+                <h2>Hubungi Kami</h2>
+                <p>Jika Anda memiliki pertanyaan atau ingin berbicara dengan kami, jangan ragu untuk menghubungi kami</p>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                    </div>
+                    <input class="text-center" type="submit" value="Submit" style=" margin-left: 1em; margin-bottom: 1em;">
+                </div>
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9903858617395!2d98.61830227412094!3d3.5896796502884962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e4f46b5ab19%3A0x447dc6ab3d465c1e!2sSekolah%20Menengah%20Kejuruan%20Negeri%209%20Medan!5e0!3m2!1sid!2sid!4v1698227992263!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
